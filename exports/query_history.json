@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2026-06-18 20:42:34",
+    "question": "Show sales by sub-category",
+    "sql": "SELECT sub_category, SUM(sales) AS total_sales FROM superstore GROUP BY sub_category",
+    "confidence": 0.95,
+    "rows_returned": 17,
+    "success": true
+  },
+  {
+    "timestamp": "2026-06-18 21:32:41",
+    "question": "Show me sales trend by year",
+    "sql": "SELECT order_year, SUM(sales) AS total_sales FROM superstore GROUP BY order_year",
+    "confidence": 0.95,
+    "rows_returned": 4,
+    "success": true
+  },
+  {
+    "timestamp": "2026-06-18 21:46:33",
+    "question": "What are the top 3 states by sales?",
+    "sql": "SELECT state, SUM(sales) AS total_sales FROM superstore GROUP BY state ORDER BY total_sales DESC LIMIT 3",
+    "confidence": 0.95,
+    "rows_returned": 3,
+    "success": true
+  },
+  {
+    "timestamp": "2026-06-19 14:26:11",
+    "question": "What are the top 3 states by sales?",
+    "sql": "SELECT state, SUM(sales) AS total_sales FROM superstore GROUP BY state ORDER BY total_sales DESC LIMIT 3",
+    "confidence": 0.95,
+    "rows_returned": 3,
+    "success": true
+  }
+]
